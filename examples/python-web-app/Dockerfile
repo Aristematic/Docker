@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 8000
 
 # Run the Django/Flask server
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD source venv1/bin/activate && python3 devops/manage.py runserver 0.0.0.0:8000
